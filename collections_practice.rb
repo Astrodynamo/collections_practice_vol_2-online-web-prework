@@ -38,3 +38,16 @@ def remove_non_strings(collection)
   end.compact
 end
 
+def count_elements(elements)
+  elements_with_count = []
+
+   elements.each do |item|
+    original = item
+    item[:count] = elements.count(item)
+    elements_with_count << item
+    elements.delete(original)
+  end
+   elements_with_count
+ end
+ 
+ 
