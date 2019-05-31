@@ -50,4 +50,17 @@ def count_elements(elements)
    elements_with_count
  end
  
- 
+ def merge_data(arr1, arr2)
+  arr2[0].map do |name, details|
+    new_details = {}
+    arr1.each do |key|
+      key.each do |k, v|
+        if name == v
+          new_details = key.merge(details)
+        end
+      end
+    end
+    new_details
+  end
+end
+
