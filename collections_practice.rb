@@ -64,3 +64,14 @@ def count_elements(elements)
   end
 end
 
+def find_cool(arr1)
+  cool_person = []
+
+   arr1.each do |hsh1|
+    if hsh1[:temperature] == "cool"
+        cool_person << hsh1
+    end
+  end
+   cool_person
+end
+
