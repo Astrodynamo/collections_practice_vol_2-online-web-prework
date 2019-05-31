@@ -87,4 +87,3 @@ def organize_schools(schools)
    end
    sorted_by_location
 end
-
