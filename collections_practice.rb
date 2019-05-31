@@ -26,3 +26,7 @@ def contain_a(elements)
    a_elements
 end
 
+def first_wa(elements)
+  elements.find {|element| element.to_s.start_with?("wa")}
+end
+
