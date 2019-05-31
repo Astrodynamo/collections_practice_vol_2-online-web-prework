@@ -30,3 +30,11 @@ def first_wa(elements)
   elements.find {|element| element.to_s.start_with?("wa")}
 end
 
+def remove_non_strings(collection)
+  collection.map do |item|
+    if item.is_a?(String)
+      item
+    end
+  end.compact
+end
+
