@@ -14,3 +14,15 @@ def begins_with_r(tools)
     return false
   end
 end
+
+def contain_a(elements)
+  a_elements = []
+
+   elements.each do |element|
+    if element.include?("a")
+      a_elements << element
+    end
+  end
+   a_elements
+end
+
